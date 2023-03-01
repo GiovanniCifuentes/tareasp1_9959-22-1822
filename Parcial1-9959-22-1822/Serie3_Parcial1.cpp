@@ -24,11 +24,19 @@ void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char ligas[NU
 
 int main()
 {
+    //le agrege la funcion para que se repita (lo hice al tiempo)
+    do{
     srand(getpid());
     float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1];
-    char camara[NUMERO_CAMARAS][MAX_LONGITUD_CADENA] = {" Cámara  de  la  Construcción      ", "Cámara  de  Industria       ", "Cámara  de TRANSPORTE", "Cámara  de TRANSPORTE","Cámara  de TRANSPORTE"};
+    char camara[NUMERO_CAMARAS][MAX_LONGITUD_CADENA] = {" CÃ¡mara  de  la  ConstrucciÃ³n      ", "CÃ¡mara  de  Industria       ", "CÃ¡mara  de TRANSPORTE", "CÃ¡mara  de TRANSPORTE","CÃ¡mara  de TRANSPORTE"};
     llenarMatriz(matriz);
     imprimirMatriz(matriz, camara);
+    cout << " "<< endl;
+     cout << "Deseas realizar otra operacion? escribir s si Si, o n si No"<<endl;
+    cin >> opcion;
+    }while (opcion == 's');//ciclo para repetir otravez el codigo
+    cout << " "<< endl;
+    cout << "No se realizara ninguna operacion mas"<< endl;
     return 0;
 }
 int busquedaAleatorios(int minimo, int maximo)
