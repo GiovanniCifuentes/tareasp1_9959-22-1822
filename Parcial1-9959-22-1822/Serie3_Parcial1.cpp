@@ -72,10 +72,10 @@ void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char ligas[NU
     int y, x;
     float promedioMayor = matriz[0][NUMERO_FECHAS];
     float promedioMenor = matriz[0][NUMERO_FECHAS];
-    char ligaPromedioMayor[MAX_LONGITUD_CADENA];
-    char ligaPromedioMenor[MAX_LONGITUD_CADENA];
-    memcpy(ligaPromedioMayor, ligas[0], MAX_LONGITUD_CADENA);
-    memcpy(ligaPromedioMenor, ligas[0], MAX_LONGITUD_CADENA);
+    char PromedioMayor[MAX_LONGITUD_CADENA];
+    char PromedioMenor[MAX_LONGITUD_CADENA];
+    memcpy(PromedioMayor, camaras[0], MAX_LONGITUD_CADENA);
+    memcpy(PromedioMenor, camaras[0], MAX_LONGITUD_CADENA);
     imprimirLineaMatriz();
     cout<<"|            CAMARAS           |";
     for (int x=0; x < NUMERO_FECHAS; x++)
@@ -97,12 +97,12 @@ void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char ligas[NU
         if (promedio > promedioMayor)
         {
             promedioMayor = promedio;
-            memcpy(ligaPromedioMayor, ligas[y], MAX_LONGITUD_CADENA);
+            memcpy(PromedioMayor, camaras[y], MAX_LONGITUD_CADENA);
         }
         if (promedio < promedioMenor)
         {
             promedioMenor = promedio;
-            memcpy(ligaPromedioMenor, ligas[y], MAX_LONGITUD_CADENA);
+            memcpy(PromedioMenor, camaras[y], MAX_LONGITUD_CADENA);
         }
         cout<<"\t"<< fixed << setprecision(2)<< (double) promedio<<"  |\n";
         imprimirLineaMatriz();
