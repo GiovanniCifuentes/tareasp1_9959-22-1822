@@ -24,6 +24,7 @@ void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char ligas[NU
 
 int main()
 {
+    char opcion;
     //le agrege la funcion para que se repita (lo hice al tiempo)
     do{
     srand(getpid());
@@ -67,7 +68,7 @@ void imprimirLineaMatriz()
     }
     cout<<"+\n";
 }
-void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char ligas[NUMERO_CAMARAS][MAX_LONGITUD_CADENA])
+void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char camaras[NUMERO_CAMARAS][MAX_LONGITUD_CADENA])
 {
     int y, x;
     float promedioMayor = matriz[0][NUMERO_FECHAS];
@@ -86,7 +87,7 @@ void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char ligas[NU
     imprimirLineaMatriz();
     for (int y=0; y <NUMERO_CAMARAS; y++)
     {
-        cout<<"|    "<<ligas[y]<<"   |";
+        cout<<"|    "<<camaras[y]<<"   |";
         float suma = 0;
         for (int x=0; x < NUMERO_FECHAS; x++)
             {
@@ -107,6 +108,6 @@ void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char ligas[NU
         cout<<"\t"<< fixed << setprecision(2)<< (double) promedio<<"  |\n";
         imprimirLineaMatriz();
     }
-    cout<<"Promedio mayor: "<<ligaPromedioMayor<<" con " <<promedioMayor<<"\n";
-    cout<<"Promedio menor: "<<ligaPromedioMenor<<" con " <<promedioMenor<<"\n";
+    cout<<"Promedio mayor: "<<PromedioMayor<<" con " <<promedioMayor<<"\n";
+    cout<<"Promedio menor: "<<PromedioMenor<<" con " <<promedioMenor<<"\n";
 }
