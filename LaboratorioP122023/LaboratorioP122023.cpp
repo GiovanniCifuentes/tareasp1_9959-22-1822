@@ -1,7 +1,6 @@
 //fecha de creacion: 08/02/2022
 //autor: Giovanni Steve Cifuentes Palencia (Equipo 3)
-//Este programa es el Laboratorio No. 1, el cual consiste en un programa que gestione las
-//calificaciones de alumnos de un colegio
+//Este programa es el Laboratorio No. 1, el cual consiste en un programa que gestione las calificaciones de alumnos de un colegio X
 //Laboratorio No. 1
 
 #include <iostream>
@@ -20,6 +19,7 @@ int main (){
 }
 
 void menuPrincipal(){
+    char opcion;
     int opciones;
     bool repetir = true;
     do{
@@ -36,7 +36,14 @@ void menuPrincipal(){
 
         switch (opciones){
         case 1:
+            do{
             datosAlumnos();
+            cout << "\n\n\tDeseas realizar otra operacion? escribir s si Si, o n si No"<<endl;
+            cin >> opcion;
+            }while(opcion == 's');
+            cout << "\n\n\t "<< endl;
+            cout << "\n\tNo se realizara ninguna operacion mas"<< endl;
+            system ("pause > nul");
             break;
 
         case 2:
@@ -56,6 +63,8 @@ void datosAlumnos(){
     string Apellido="";
     float notaMate, notaFisica, notaNaturales, notaSociales,  notaComu;
     float total, promedio;
+
+
     cout << "\n\n\tIngrese las nombres y apellidos del alumno: "<<endl;
     cout << "\n\tCuales son los nombres del alumno a ingresar: ";
     cin >>Nombre;
@@ -72,7 +81,9 @@ void datosAlumnos(){
     cin >>notaSociales;
     cout << "\n\tNota para el curso de Comunicacion y Lenguaje: ";
     cin >>notaComu;
+
     system("cls");
+
     cout << "\n\n\tEstos son los totales y promedios del alumno: "<<endl;
     cout << "\n\tNombres: "<<Nombre<<endl;
     cout << "\n\tApellidos: "<<Apellido<<endl;
@@ -82,12 +93,15 @@ void datosAlumnos(){
     cout << "\n\tCurso de Ciencias Naturales: "<<notaNaturales<<endl;
     cout << "\n\tCurso de Ciencias Sociales: "<<notaSociales<<endl;
     cout << "\n\tCurso de Comunicacion y Lenguaje: "<<notaComu<<endl;
+
     cout << "\n\n\tTotal de zona acumulada: "<<endl;
     total = notaMate+notaFisica+notaNaturales+notaSociales+notaComu;
     cout << "\n\tTotal es de: "<<total<<endl;
+
     cout << "\n\n\tPromedio Total: "<<endl;
     promedio = (notaMate+notaFisica+notaNaturales+notaSociales+notaComu)/5;
     cout << "\n\tTotal es de: "<<promedio<<endl;
+
     system ("pause > nul");
 
 }

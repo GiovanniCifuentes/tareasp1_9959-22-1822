@@ -61,14 +61,14 @@ void menuPrincipal(){
 
         switch (opciones){
         case 1:
-            //do{
+            do{
             ingresoNotas();
-            //cout << "\n\n\tDeseas realizar otro ingreso de notas? escribir s si Si, o n si No"<<endl;
-            //cin >> opcion;
-           // }while(opcion == 's');
-            //cout << "\n\n\t "<< endl;
-            //cout << "\n\tNo se realizara ningun ingraso de notas mas"<< endl;
-            //system ("pause > nul");
+            cout << "\n\n\tDeseas realizar otro ingreso de notas? escribir s si Si, o n si No"<<endl;
+            cin >> opcion;
+            }while(opcion == 's');
+            cout << "\n\n\t "<< endl;
+            cout << "\n\tNo se realizara ningun ingraso de notas mas"<< endl;
+            system ("pause > nul");
             break;
         case 2:
             cout << "\n\tNo se realizara ninguna operacion"<<endl;
