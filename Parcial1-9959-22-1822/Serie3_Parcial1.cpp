@@ -34,6 +34,7 @@ int main()
     char opcion;
     //le agrege la funcion para que se repita (lo hice al tiempo)
     do{
+<<<<<<< HEAD
     system("cls");
     srand(getpid());
     cout << "\nCamaras de la Industia"<< endl;
@@ -88,13 +89,23 @@ int main()
         cout << "\n LA MEJOR CAMARA ES: CAMARA DE TRANSPORTE, CON UN PROMEDIO DE: "<< promedioMonto3 <<"!!!" <<endl;
     }
     cout << "\n----------------------------------------------------------------------------------------------------------------------------------------"<<endl;
+=======
+    srand(getpid());
+    float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1];
+    char camara[NUMERO_CAMARAS][MAX_LONGITUD_CADENA] = {" Cámara  de  la  Construcción      ", "Cámara  de  Industria       ", "Cámara  de TRANSPORTE", "Cámara  de TRANSPORTE","Cámara  de TRANSPORTE"};
+    llenarMatriz(matriz);
+    imprimirMatriz(matriz, camara);
+>>>>>>> 21bbeb6963323cc16b0a634b93ad813a339ffdc4
     cout << " "<< endl;
      cout << "Deseas realizar otra operacion? escribir s si Si, o n si No"<<endl;
     cin >> opcion;
     }while (opcion == 's');//ciclo para repetir otravez el codigo
     cout << " "<< endl;
     cout << "No se realizara ninguna operacion mas"<< endl;
+<<<<<<< HEAD
     system ("pause > nul");
+=======
+>>>>>>> 21bbeb6963323cc16b0a634b93ad813a339ffdc4
     return 0;
 }
 int busquedaAleatorios(int minimo, int maximo)
@@ -155,6 +166,7 @@ void imprimirLineaMatriz()
     }
     cout<<"+\n";
 }
+<<<<<<< HEAD
 void imprimirMatriz1(float matriz1[NUMERO_EMPRESAS][NUMERO_FECHAS+1], char camara1[NUMERO_EMPRESAS][MAX_LONGITUD_CADENA])
 {
     int y, x;
@@ -164,6 +176,17 @@ void imprimirMatriz1(float matriz1[NUMERO_EMPRESAS][NUMERO_FECHAS+1], char camar
     char MontoMenor[MAX_LONGITUD_CADENA];
     memcpy(MontoMayor, camara1[0], MAX_LONGITUD_CADENA);
     memcpy(MontoMenor, camara1[0], MAX_LONGITUD_CADENA);
+=======
+void imprimirMatriz(float matriz[NUMERO_CAMARAS][NUMERO_FECHAS+1], char camaras[NUMERO_CAMARAS][MAX_LONGITUD_CADENA])
+{
+    int y, x;
+    float promedioMayor = matriz[0][NUMERO_FECHAS];
+    float promedioMenor = matriz[0][NUMERO_FECHAS];
+    char PromedioMayor[MAX_LONGITUD_CADENA];
+    char PromedioMenor[MAX_LONGITUD_CADENA];
+    memcpy(PromedioMayor, camaras[0], MAX_LONGITUD_CADENA);
+    memcpy(PromedioMenor, camaras[0], MAX_LONGITUD_CADENA);
+>>>>>>> 21bbeb6963323cc16b0a634b93ad813a339ffdc4
     imprimirLineaMatriz();
     cout<<"|          Empresas             |";
     for (int x=0; x < NUMERO_FECHAS; x++)
@@ -174,7 +197,11 @@ void imprimirMatriz1(float matriz1[NUMERO_EMPRESAS][NUMERO_FECHAS+1], char camar
     imprimirLineaMatriz();
     for (int y=0; y <NUMERO_EMPRESAS; y++)
     {
+<<<<<<< HEAD
         cout<<"|    "<<camara1[y]<<"   |";
+=======
+        cout<<"|    "<<camaras[y]<<"   |";
+>>>>>>> 21bbeb6963323cc16b0a634b93ad813a339ffdc4
         float suma = 0;
         for (int x=0; x < NUMERO_FECHAS; x++)
             {
@@ -184,17 +211,28 @@ void imprimirMatriz1(float matriz1[NUMERO_EMPRESAS][NUMERO_FECHAS+1], char camar
         float monto = matriz1[y][NUMERO_FECHAS];
         if (monto > montoMayor)
         {
+<<<<<<< HEAD
             montoMayor = monto;
             memcpy(MontoMayor, camara1[y], MAX_LONGITUD_CADENA);
+=======
+            promedioMayor = promedio;
+            memcpy(PromedioMayor, camaras[y], MAX_LONGITUD_CADENA);
+>>>>>>> 21bbeb6963323cc16b0a634b93ad813a339ffdc4
         }
         if (monto < montoMayor)
         {
+<<<<<<< HEAD
             montoMayor = monto;
             memcpy(MontoMayor, camara1[y], MAX_LONGITUD_CADENA);
+=======
+            promedioMenor = promedio;
+            memcpy(PromedioMenor, camaras[y], MAX_LONGITUD_CADENA);
+>>>>>>> 21bbeb6963323cc16b0a634b93ad813a339ffdc4
         }
         cout<<"\t"<< fixed << setprecision(2)<< (double) monto<<"  |\n";
         imprimirLineaMatriz();
     }
+<<<<<<< HEAD
     cout<<"Monto mayor de la empresa: "<<MontoMayor<<" con " <<montoMayor<<"\n";
     cout<<"Monto menor de la empresa: "<<MontoMenor<<" con " <<montoMenor<<"\n";
 }
@@ -284,4 +322,8 @@ void imprimirMatriz3(float matriz3[NUMERO_EMPRESAS][NUMERO_FECHAS+1], char camar
 
     cout<<"Monto mayor de la empresa: "<<MontoMayor<<" con " <<montoMayor<<"\n";
     cout<<"Monto menor de la empresa: "<<MontoMenor<<" con " <<montoMenor<<"\n";
+=======
+    cout<<"Promedio mayor: "<<PromedioMayor<<" con " <<promedioMayor<<"\n";
+    cout<<"Promedio menor: "<<PromedioMenor<<" con " <<promedioMenor<<"\n";
+>>>>>>> 21bbeb6963323cc16b0a634b93ad813a339ffdc4
 }

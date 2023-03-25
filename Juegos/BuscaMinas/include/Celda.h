@@ -6,19 +6,23 @@ class Celda
 {
     public:
         Celda();
-        Celda(int x, int y, bool tieneMina);
-        void imprimir();
-        bool colocarMina(bool tieneMina);
-        bool tieneMina();
-        bool estadoMina();
-        void encontrarMina();
+        Celda(int coordenadaX, int coordenadaY, bool estadoMina);
+        int setCoordenaX (int coordenadaX);
+        int getCoordenaX();
+        int setCoordenaY (int coordenadaY);
+        int getCoordenaY();
+        bool setMina (bool estadoMina);
+        bool getMina();
+        bool setMinaDescubirta (bool minaDescubirta);
+        bool getMinaDescubirta();
+        void imprimirCelda();
 
 
     protected:
 
     private:
-        int x, y;
-        bool mina, descubierta;
+        int coordenadaX, coordenadaY;
+        bool mina, minaDescubirta;
 };
 
 #endif // CELDA_H
