@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1679292554 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\main.cpp
+	<iostream>
+	<unistd.h>
+	"Juego.h"
+
+1679290166 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\juego.cpp
+	"Juego.h"
+
+1679290952 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\juego.h
+	"Tablero.h"
+
+1679292869 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\tablero.cpp
+	"Tablero.h"
+	<sstream>
+	<iostream>
+
+1679291105 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\tablero.h
+	<iostream>
+	<vector>
+	"Celda.h"
+
+1679069269 source:c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\celda.cpp
+	"Celda.h"
+	<iostream>
+
+1679067804 c:\users\visitante\proyectos\didactica2k23\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\celda.h
+
+1679324984 source:c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\main.cpp
+	<iostream>
+	<unistd.h>
+	"Juego.h"
+
+1679290952 c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\juego.h
+	"Tablero.h"
+
+1679325748 c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\tablero.h
+	<iostream>
+	<vector>
+	"Celda.h"
+
+1679067804 c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\include\celda.h
+
+1679069269 source:c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\celda.cpp
+	"Celda.h"
+	<iostream>
+
+1679290166 source:c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\juego.cpp
+	"Juego.h"
+
+1679292869 source:c:\users\visitante\proyectos\didactica2k23\temporal\prograuno2k23\juegos\buscaminasdidactica\buscaminasdidactica\src\tablero.cpp
+	"Tablero.h"
+	<sstream>
+	<iostream>
+
+1680137747 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\src\celda.cpp
+	"Celda.h"
+	<iostream>
+
+1680137623 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\include\celda.h
+
+1680290120 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\src\juego.cpp
+	"Juego.h"
+	"Config.h"
+	<iostream>
+
+1680290120 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\include\juego.h
+	"Tablero.h"
+	"Config.h"
+
+1680290159 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\include\tablero.h
+	<iostream>
+	<vector>
+	"Celda.h"
+	"Config.h"
+
+1680290142 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\src\tablero.cpp
+	"Config.h"
+	"Tablero.h"
+	<sstream>
+	<iostream>
+
+1680143512 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\src\config.cpp
+	<iostream>
+	<unistd.h>
+	"Config.h"
+
+1680210067 c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\include\config.h
+
+1680230908 source:c:\users\steven cifuentes\documents\universidad 2022\3er semestre\programacion i\ejercicios o tareas de git\tareasp1_9959-22-1822\buscaminasdidactica\main.cpp
+	<iostream>
+	<unistd.h>
+	"Juego.h"
+	"Config.h"
+
