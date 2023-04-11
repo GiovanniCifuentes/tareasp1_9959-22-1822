@@ -73,17 +73,18 @@ int Juego::aleatorio_en_rango(int minimo, int maximo)
 
 	void Juego::iniciar()
 	{
-	    const int FILASTABLERO = 5;
+	   /* const int FILASTABLERO = 5;
         const int COLUMNASTABLERO = 5;
         const int MINASENTABLERO = 3;
         const bool MODODESARROLLADOR = true;
         const int VIDASTABLERO = 3;
 
-        Config configuracionJuego(FILASTABLERO, COLUMNASTABLERO, MINASENTABLERO, MODODESARROLLADOR, VIDASTABLERO);
+       Config configuracionJuego(FILASTABLERO, COLUMNASTABLERO, MINASENTABLERO, MODODESARROLLADOR, VIDASTABLERO);
          Juego juego(Tablero(configuracionJuego.getfilasTablero(), configuracionJuego.getcolumnasTablero(), configuracionJuego.getmodoDesarrolladorTablero()), configuracionJuego.getminasTablero());
-			    Jugador jugadorActivo(configuracionJuego.getvidasTablero());
+			    Jugador jugadorActivo(configuracionJuego.getvidasTablero());*/
 
-		int fila, columna, vidasRestantes;
+		int fila, columna;
+		//int vidasRestantes;
 
 
 		while (true)
@@ -94,10 +95,10 @@ int Juego::aleatorio_en_rango(int minimo, int maximo)
 			bool respuestaAUsuario = this->tablero.descubrirMina(columna, fila);
 			if (!respuestaAUsuario)
 			{
-			    vidasRestantes = jugadorActivo.disminuirVida();
-                cout << "Perdiste una vida, Tienes: " << vidasRestantes << endl;
+			    //vidasRestantes = jugadorActivo.disminuirVida();
+                //cout << "Perdiste una vida, Tienes: " << vidasRestantes << endl;
 			}
-			if(vidasRestantes == 0)
+			//if(vidasRestantes == 0)
 			{
                 cout << "\nPERDISTE EL JUEGO!!!!!!!!!\n";
                 cout << "\nESFUERZATE MAS PARA LA PROXIMA!!!!!!!!\n";
